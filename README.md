@@ -17,3 +17,5 @@ The whole genome assembly was built with long reads from Oxford Nanopore Technol
 [Exon Lengths](./Exon_Lengths): Data file for exon lengths across genomes
 
 [Repeat Elements](./Repeat_Elements): Scripts for repeat elements across genomes
+
+[Supplementary File](./Supplementary_File): Supplementary file
