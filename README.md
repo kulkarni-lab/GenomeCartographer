@@ -6,3 +6,4 @@ Salunkhe Shreya, Cherukutty Arjun, Khopkar Pratik, Mazumder Dibyo, Kulkarni Sidd
 The whole genome assembly was built with long reads from Oxford Nanopore Technologies.
 
 ## Folders in repository:
+[Mir Machine](./Mir_Machine): Script and data files (FASTA, Annotation and Heatmap) for miRNA across genomes
