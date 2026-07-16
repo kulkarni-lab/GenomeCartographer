@@ -1,0 +1,11 @@
+species	genome_size
+MESOSTIG_Neoseiulus.fna	199210599
+MESOSTIG_Phytoseiulus_persimilis.fna	181015949
+Galend.fna	151460383
+ACARI_Argas_vulgaris.fna	1340163888
+ACARI_Ornithodoros_turicata.fna	1071364447
+Ixodhexa.fna	2578961687
+Ixodpaci.fna	2234492073
+Indiac2_clean.fna	2782328633
+Varroa.fna	368813097
+VarroaJacobs.fna	364328871
