@@ -6,6 +6,8 @@ Salunkhe Shreya, Cherukutty Arjun, Khopkar Pratik, Mazumder Dibyo, Kulkarni Sidd
 The whole genome assembly was built with long reads from Oxford Nanopore Technologies.
 
 ## Folders in repository:
+[Parasitiformes Linkage Groups](./Parasitiformes_Linkage_Groups): Data files for linkage groups
+
 [Mir Machine](./Mir_Machine): Scripts and data files for miRNA across genomes
 
 [Gene Density](./Gene_Density): Script and data files for gene density across genomes
