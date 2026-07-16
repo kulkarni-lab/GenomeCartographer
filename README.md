@@ -6,7 +6,7 @@ Salunkhe Shreya, Cherukutty Arjun, Khopkar Pratik, Mazumder Dibyo, Kulkarni Sidd
 The whole genome assembly was built with long reads from Oxford Nanopore Technologies.
 
 ## Folders in repository:
-[Mir Machine](./Mir_Machine): Script and data files for miRNA across genomes
+[Mir Machine](./Mir_Machine): Scripts and data files for miRNA across genomes
 
 [Gene Density](./Gene_Density): Script and data files for gene density across genomes
 
@@ -15,3 +15,5 @@ The whole genome assembly was built with long reads from Oxford Nanopore Technol
 [Gene Compactness](./Gene_Compactness): Data file for gene compactness across genomes
 
 [Exon Lengths](./Exon_Lengths): Data file for exon lengths across genomes
+
+[Repeat Elements](./Repeat_Elements): Scripts for repeat elements across genomes
