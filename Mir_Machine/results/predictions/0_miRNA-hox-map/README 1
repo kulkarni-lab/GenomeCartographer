@@ -1,0 +1,5 @@
+###Hox-miRNA mapping###
+
+Run the script as;
+
+python3 1.hox-miRNA-map.py -m input_of_hox-miRNAs.gffs --hox hox_clusters.annotated.csv
