@@ -1,6 +1,9 @@
 # Hox-miRNA mapping
 
-This script maps miRNA loci to HOX gene clusters across multiple taxa. The script reads HOX gene coordinates and miRNA GFF annotations, determinesthe genomic relationship between each miRNA and the corresponding HOX cluster, calculates an HOX association score, generates presence/absence matrices, extracts 
+This script maps miRNA loci to HOX gene clusters across multiple taxa. 
+The script reads HOX gene coordinates and miRNA GFF annotations, determines
+the genomic relationship between each miRNA and the corresponding HOX cluster, 
+calculates an HOX association score, generates presence/absence matrices, extracts 
 canonical HOX-associated miRNAs, and produces a heatmap of HOX association scores.
 
 ## Requirements
