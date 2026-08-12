@@ -43,8 +43,64 @@ The filename determines the species name.
    The genome-size file must contain at least two columns: `species` `genome_size`. It must be tab separated file.
 
    Example: [`gen-sizes.txt`](./gen-sizes.txt)
+```
+species   genome_size
+MESOSTIG_Neoseiulus.fna   199210599
+MESOSTIG_Phytoseiulus_persimilis.fna   181015949
+Galend.fna   151460383
+ACARI_Argas_vulgaris.fna   1340163888
+```
 
-   
+- Genome size must be given in **base pairs**
+- The species name must be matching exactly with the `.out` filename and `genome-size table`.  
+[!NOTE] files without matching names are skipped.
+
+# Output
+The script generates two figures (PNG and PDF) for each successfully processed species and all species TE landscape as well.
+
+```
+speciesA_landscape_percentGenome.pdf
+speciesA_landscape_percentGenome.svg
+speciesB_landscape_percentGenome.pdf
+speciesB_landscape_percentGenome.svg
+speciesC_landscape_percentGenome.pdf
+speciesC_landscape_percentGenome.svg
+All_species_TE_landscape_percentGenome.pdf
+All_species_TE_landscape_percentGenome.svg
+TE_divergence_summary.tsv
+```
+
+### Output files description
+
+`speciesA_landscape_percentGenome.pdf`
+`speciesA_landscape_percentGenome.svg`
+
+- Individual species plots detailed TE curves for `DNA` `LINE` `LTR` `SINE` `Helitron` `Unknown`.
+- The `x-axis` is percent divergence from consensus and `y-axis` is percent genome occupied.
 
 
-   
+`All_species_TE_landscape_percentGenome.pdf`
+`All_species_TE_landscape_percentGenome.svg`
+
+- This figure shows the overall repeat landscapes for all species.
+- Combined plot does not separate curves by TE class, instead represents the total repeat occupancy across divergence bins.
+
+`TE_divergence_summary.tsv`
+
+The script generates a summary table with the following columns;
+```
+Species
+Mean_divergence
+Median_divergence
+Q1_divergence
+Q3_divergence
+IQR_divergence
+SD_divergence
+```
+
+Example: 
+```
+Species	Mean_divergence	Median_divergence	Q1_divergence	Q3_divergence	IQR_divergence	SD_divergence
+speciesA	12.43	10.00	4.00	18.00	14.00	9.21
+speciesB	15.21	13.00	7.00	21.00	14.00	10.32
+```
