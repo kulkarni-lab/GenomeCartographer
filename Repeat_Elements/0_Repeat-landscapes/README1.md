@@ -42,7 +42,7 @@ The filename determines the species name.
 ## 2. Genome size table
    The genome-size file must contain at least two columns: `species` `genome_size`. It must be tab separated file.
 
-   Example: [`gen-sizes.txt`](Repeat_Elements/0_Repeat-landscapes/gen-sizes.txt)
+   Example: [`gen-sizes.txt`](./gen-sizes.txt)
 
    
 
