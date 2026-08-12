@@ -21,12 +21,12 @@ To install - `pip install pandas numpy matplotlib`
 ```
 python3 1.hox-miRNA-map.py -m input_of_hox-miRNAs.gffs --hox hox_clusters.annotated.csv
 ```
--m input files  
+-m gffs_hox_miRNA 
 --hox hox coordinate CSV file
 
 # Input files
 
-## 1. miRNA GFF files
+## 1. miRNA GFF files 
    Directory should be supplied using;
    -m or --mirna_dir
 
@@ -38,7 +38,7 @@ The directory (gffs_hox-miRNA) should contain files named as:
                
   The script needs regular 9 column gff/gff3
 
-  Example:
+  Example: [`_gffs_hox-miRNA`_](./gffs_hox-miRNA)
 ```
 CM147321.1	MirMachine	microRNA	138807572	138807631	50.3	+	.	gene_id=Bantam.PRE;E-value=5.2e-05;sequence_with_30nt=TAACACGACTGGTGGAGGATCAGACAAAACTGGTTTTCACAATGATCATCCAGATGTGTCCGATATCTGAGATCATTGTGAAAGCTGATTTTGTTGTTTCGACAACGAGGGAAGCGGGAC;seed=(p3_seed(GAGATCA*))`
 CM147319.1	MirMachine	microRNA	208675234	208675291	84.6	+	.	gene_id=Iab-4.PRE;E-value=7.3e-17;sequence_with_30nt=GACGGCGATGGCTGGATCGGCATCTCCTGTTCGTATACTGAGTGTATCCTGAGTGGACAACTTTCCGGTATACCTTCAGTATACGTAACAGGCGACCCGTTTCGAGAGCGACTTGGAT;seed=(p5_seed(CGTATAC*))
@@ -59,7 +59,7 @@ CM147320.1	MirMachine	microRNA	73825156	73825227	67.4	+	.	gene_id=Let-7.PRE;E-va
    end	
    strand
    ```
-   Example: 
+   Example: [`_gffs_hox-miRNA`_](./hox_clusters.annotated.csv)
 ```
 genome,chrom_file,sequence,hoxgene,scaffold,start,end,strand
 Avul.fasta,Avul.chrom,Avul9675_KAN0984125.1,lab,CM147319.1,201577313,201664020,-
@@ -157,4 +157,3 @@ upstream_of_Hox
 downstream_of_Hox
 between_HoxA1_and_HoxA2
 ```
-
