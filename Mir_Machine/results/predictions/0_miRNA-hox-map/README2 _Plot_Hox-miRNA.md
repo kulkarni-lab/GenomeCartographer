@@ -58,7 +58,7 @@ The `genome` column is used to identify the taxa.
   
   `--mir`  **Eg:** **--mir Canonical_HOX_miRNAs.tsv**
 
-  This file is one of the output generated from previous HOX-miRNA mapping script [`README1_Hox-miRNA-map.md`](./README1_Hox-miRNA-map.md)
+  This file is one of the output generated from previous HOX-miRNA mapping script [`1.hox-miRNA-map.py`](./1.hox-miRNA-map.py)
 
 It should contain columns including;
 ```
@@ -102,13 +102,13 @@ The script first selects only the requested miRNAs, it retains miRNAS with eithe
 
 miRNAs classified as: `DIFFERENT_SCAFFOLD` are excluded from the visualization.
 
-Each `HOX gene` is represented by _rectangle_ The rectangle is positioned according to the gene's genomic coordinates relative to the minimum and maximum coordinates represented on that scaffold. 
+Each `HOX gene` is represented by _rectangle_. The rectangle is positioned according to the gene's genomic coordinates relative to the minimum and maximum coordinates represented on that scaffold. 
 
 `HOX gene` names are displayed above the _genomic blocks_. `Gene labels` are rotated by _90 degrees_ to reduce overlap.
 
 Selected miRNAs are represented using different marker shapes;
 ```
-Mir-10.PRE	            Circle
+Mir-10.PRE	              Circle
 Iab-4.PRE	              Square
 Other selected miRNAs	  Triangle
 ```
