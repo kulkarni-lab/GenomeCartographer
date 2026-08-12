@@ -10,25 +10,29 @@ canonical HOX-associated miRNAs, and produces a heatmap of HOX association score
 Python 3.8 or newer.
 
 Required Python packages;
-pandas
-numpy
-matplotlib
+`pandas`
+`numpy`
+`matplotlib`
 
-To install - `pip install pandas numpy matplotlib`
+To install;
+```
+pip install pandas numpy matplotlib
+```
 
 
 ## Usage
 ```
 python3 1.hox-miRNA-map.py -m input_of_hox-miRNAs.gffs --hox hox_clusters.annotated.csv
 ```
--m gffs_hox_miRNA 
---hox hox coordinate CSV file
+`-m` path to gffs_hox_miRNA 
+
+`--hox` path to hox coordinate CSV file
 
 # Input files
 
 ## 1. miRNA GFF files 
    Directory should be supplied using;
-   -m or --mirna_dir
+   `-m` or `--mirna_dir`
 
 The directory (gffs_hox-miRNA) should contain files named as:
   filename_miRNA.gff
@@ -46,9 +50,9 @@ CM147320.1	MirMachine	microRNA	73825156	73825227	67.4	+	.	gene_id=Let-7.PRE;E-va
 ```
 ## 2. HOX coordinate CSV
    The CSV file should be supplied using;
-   --hox 
+   `--hox` 
 
-   It must contain "," seperated;
+   It must contain "," separated;
    ```
    genome	
    chrom_file	
