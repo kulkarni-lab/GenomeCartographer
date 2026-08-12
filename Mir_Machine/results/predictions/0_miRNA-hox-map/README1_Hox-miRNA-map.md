@@ -38,7 +38,7 @@ The directory (gffs_hox-miRNA) should contain files named as:
                
   The script needs regular 9 column gff/gff3
 
-  Example: [`_gffs_hox-miRNA`_](./gffs_hox-miRNA)
+  Example: [`gffs_hox-miRNA`](./gffs_hox-miRNA)
 ```
 CM147321.1	MirMachine	microRNA	138807572	138807631	50.3	+	.	gene_id=Bantam.PRE;E-value=5.2e-05;sequence_with_30nt=TAACACGACTGGTGGAGGATCAGACAAAACTGGTTTTCACAATGATCATCCAGATGTGTCCGATATCTGAGATCATTGTGAAAGCTGATTTTGTTGTTTCGACAACGAGGGAAGCGGGAC;seed=(p3_seed(GAGATCA*))`
 CM147319.1	MirMachine	microRNA	208675234	208675291	84.6	+	.	gene_id=Iab-4.PRE;E-value=7.3e-17;sequence_with_30nt=GACGGCGATGGCTGGATCGGCATCTCCTGTTCGTATACTGAGTGTATCCTGAGTGGACAACTTTCCGGTATACCTTCAGTATACGTAACAGGCGACCCGTTTCGAGAGCGACTTGGAT;seed=(p5_seed(CGTATAC*))
