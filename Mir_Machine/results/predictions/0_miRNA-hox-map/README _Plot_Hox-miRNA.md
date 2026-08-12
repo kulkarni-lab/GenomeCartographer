@@ -1,4 +1,4 @@
-###Plot hox-miRNA###
+# Plot hox-miRNA #
 
 Run the script as;
 
