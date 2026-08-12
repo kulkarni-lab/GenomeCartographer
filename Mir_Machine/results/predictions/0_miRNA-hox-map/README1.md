@@ -1,4 +1,4 @@
-# Hox-miRNA mappings
+# Hox-miRNA mapping
 
 This script maps miRNA loci to HOX gene clusters across multiple taxa. 
 The script reads HOX gene coordinates and miRNA GFF annotations, determines
