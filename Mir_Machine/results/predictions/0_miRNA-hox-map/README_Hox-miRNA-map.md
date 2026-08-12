@@ -149,7 +149,7 @@ Rows represent taxa and columns represent miRNAs.
 - `DIFFERENT_SCAFFOLD`
    - The miRNA is not located on a scaffold containing a recognized HOX cluster.
 
-**For miRNAs ocated on the same scaffold as a HOX cluster, the script determines a more detailed context.**
+**For miRNAs located on the same scaffold as a HOX cluster, the script determines a more detailed context.**
 Which includes;
 ```
 inside_Hox
