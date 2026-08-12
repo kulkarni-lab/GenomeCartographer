@@ -35,12 +35,15 @@ python3 1.hox-miRNA-map.py -m input_of_hox-miRNAs.gffs --hox hox_clusters.annota
    `-m` or `--mirna_dir`
 
 The directory (gffs_hox-miRNA) should contain files named as:
-  filename_miRNA.gff
-      Example: Avul_miRNA.gff
-               Galen_miRNA.gff
-               Ixod_miRNA.gff
-               
-  The script needs regular 9 column gff/gff3
+
+`filename_miRNA.gff`
+
+```
+Example: Avul_miRNA.gff
+         Galen_miRNA.gff
+         Ixod_miRNA.gff
+```        
+  The script needs regular 9 column `gff/gff3`
 
   Example: [`gffs_hox-miRNA`](./gffs_hox-miRNA)
 ```
@@ -75,6 +78,8 @@ Varr.fasta,Varr.chrom,Varr3255_XP_022670603.1,AbdB,NW_019211460.1,8043840,804799
 The `genome` column is used to identify the taxa.
 
 # Output
+The script generates six files;
+
 ```
 miRNA_HOX_positions.tsv
 miRNA_presence_absence.tsv
