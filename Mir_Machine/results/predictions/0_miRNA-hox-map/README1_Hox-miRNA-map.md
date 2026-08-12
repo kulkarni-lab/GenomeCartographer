@@ -59,7 +59,7 @@ CM147320.1	MirMachine	microRNA	73825156	73825227	67.4	+	.	gene_id=Let-7.PRE;E-va
    end	
    strand
    ```
-   Example: [`_hox_clusters.annotated.csv`_](./hox_clusters.annotated.csv)
+   Example: [`hox_clusters.annotated.csv`](./hox_clusters.annotated.csv)
 ```
 genome,chrom_file,sequence,hoxgene,scaffold,start,end,strand
 Avul.fasta,Avul.chrom,Avul9675_KAN0984125.1,lab,CM147319.1,201577313,201664020,-
