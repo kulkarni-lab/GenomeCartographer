@@ -89,7 +89,7 @@ species2   Mir-10.PRE     scaffold_7     53000     INSIDE_HOX        0          
 
 # Output 
 
-The output will be the genomic map figure in .PDF and .SVG format.
+The script generates genomic map figure in .PDF and .SVG format.
 ```
 Written:
   Panel1A_Hox_miRNA_map.pdf
