@@ -47,7 +47,7 @@ CM147320.1	MirMachine	microRNA	73825156	73825227	67.4	+	.	gene_id=Let-7.PRE;E-va
    The CSV file should be supplied using;
    --hox 
 
-   It must contain tab se
+   It must contain "," seperated;
    genome	
    chrom_file	
    sequence	
