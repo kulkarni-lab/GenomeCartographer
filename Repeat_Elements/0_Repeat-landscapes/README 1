@@ -1,8 +1,0 @@
-###Repeat landscapes###
-
-Run the script as;
-
-python3 1.repeat-landscapes.py -i ./_files/ -g gen-sizes.txt
-
--i input-files-
--g combined-taxa-gene-size-text
