@@ -19,7 +19,7 @@ To install - pip install pandas numpy matplotlib
 
 ## Usage
 
-python3 1.hox-miRNA-map.py -m input_of_hox-miRNAs.gffs --hox hox_clusters.annotated.csv
+<python3 1.hox-miRNA-map.py -m input_of_hox-miRNAs.gffs --hox hox_clusters.annotated.csv
 
 -m input files  
 --hox hox coordinate CSV file
