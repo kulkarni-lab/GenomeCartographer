@@ -66,26 +66,29 @@ TE_divergence_heatmap.svg
 Median_IQR_divergence.pdf
 Median_IQR_divergence.svg
 ```
-This figure displays: - Median TE divergence as the central point. 
-                      - Q1 and Q3 as the lower and upper limits of the error bar
+This figure displays: 
+- Median TE divergence as the central point.
+- Q1 and Q3 as the lower and upper limits of the error bar
 
 #### 2. Box-style summary
 ```
 TE_divergence_box_summary.pdf
 TE_divergence_box_summary.svg
 ```
-This visualization represents: - Rectangle → Q1 to Q3 
-                               - Horizontal line → Median
-                               - Vertical line → Median ± SD
+This visualization represents:
+- Rectangle → Q1 to Q3
+- Horizontal line → Median
+- Vertical line → Median ± SD
 
 #### 3. TE age structure bubble plot
 ```
 TE_divergence_bubbleplot.pdf
 TE_divergence_bubbleplot.svg
 ```
-This plot compares: - X-axis → Median TE divergence
-                    - Y-axis → Mean TE divergence 
-                    - Bubble size → IQR
+This plot compares:
+- X-axis → Median TE divergence
+- Y-axis → Mean TE divergence
+- Bubble size → IQR
 
 `X = Median divergence ` `Y = Mean divergence` `Size = IQR`
 
@@ -107,11 +110,13 @@ TE_divergence_heatmap.pdf
 TE_divergence_heatmap.svg
 ```
 
-The heatmap displays: - Mean divergence
-                      - Median divergence
-                      - Q1 divergence
-                      - Q3 divergence
-                      - IQR divergence
-                      - SD divergence
-
-The heatmap provides a quick overview of how the different summary statistics vary across species.
+The heatmap displays: 
+```
+ Mean divergence
+ Median divergence
+ Q1 divergence
+ Q3 divergence
+ IQR divergence
+ SD divergence
+```
+- Heatmap provides a quick overview of how the different summary statistics vary across species.
