@@ -215,7 +215,7 @@ Which means the largest amount of repeat sequence occurs in the: `4–5%` diverg
 
 ## Interpreting TE Landscapes
 
-- The general interpretation is:
+**The general interpretation is:**
 
 `Low divergence`
 
