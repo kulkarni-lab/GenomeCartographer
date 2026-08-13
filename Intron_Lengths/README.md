@@ -38,7 +38,7 @@ python3 1.Intron-from-gtf_corr.py annotations genome_architecture order.txt
 
 `order.txt`           path to text file containing species names in the desired order
 
-# Input files
+## Input files
 
 ## 1. Genome annotation files
    The script accepts standard 9-column; `.gtf` `.gff` `.gff3`
