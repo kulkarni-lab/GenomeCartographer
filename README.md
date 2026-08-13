@@ -14,10 +14,6 @@ The whole genome assembly was built with long reads from Oxford Nanopore Technol
 
 [Intron Lengths](./Intron_Lengths): Script for intron lengths across genomes
 
-[Gene Compactness](./Gene_Compactness): Data file for gene compactness across genomes
-
-[Exon Lengths](./Exon_Lengths): Data file for exon lengths across genomes
-
 [Repeat Elements](./Repeat_Elements): Scripts for repeat elements across genomes
 
 [Supplementary File](./Supplementary_File): Supplementary file
