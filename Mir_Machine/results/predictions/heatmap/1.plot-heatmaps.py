@@ -10,11 +10,12 @@ from matplotlib.colors import ListedColormap, BoundaryNorm
 # taxon_order.txt should contain ONE species per line
 #
 # Example:
-#
-# Opilioacarus
+## Opilioacarus
 # Ixodes
 # Derm
 # Mesostigma
+#
+#RUN as: python3 1.plot-heatmaps.py
 #
 ###########################################################
 
