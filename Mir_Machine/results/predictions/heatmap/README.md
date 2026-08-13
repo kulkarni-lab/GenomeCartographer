@@ -65,3 +65,110 @@ Opilioacarus,miR-4,5
 
 The script reads species name using: species = `df["species].iloc[0]`. Therefore, the `species` column should contain the species identifier used for that particular `MIRMachine` result.
 
+
+# Output 
+The script produces seven output files.
+```
+combined_miRNA_copy_numbers.csv
+Acari_miRNA_copy_number_heatmap.pdf
+Acari_miRNA_copy_number_heatmap.svg
+Acari_miRNA_copy_number_heatmap.png
+Acari_miRNA_conservation_heatmap.pdf
+Acari_miRNA_conservation_heatmap.svg
+Acari_miRNA_conservation_heatmap.png
+```
+
+### Output files description
+
+#### 1. Combined matrix
+
+`combined_miRNA_copy_numbers.csv` 
+- This CSV file contains the complete un-capped copy-number matrix of miRNA.
+
+Example:
+```
+family,Opilioacarus,Ixodes,Derm,Mesostigma
+miR-1,2,1,5,0
+miR-2,1,1,0,1
+miR-3,8,6,0,2
+miR-4,1,1,1,1
+```
+
+#### 2. Copy-number heatmap
+```
+Acari_miRNA_copy_number_heatmap.pdf
+Acari_miRNA_copy_number_heatmap.svg
+Acari_miRNA_copy_number_heatmap.png
+```
+
+- Since the code is written for `Acari` it generates outputs with the prefix `Acari`.
+- The heatmap represents `miRNA copy number` using a custom color scale.
+- Color scale, `0` `1` `2` `3` `4` `5+` **The colour density increases with copy number.
+
+#### 3. Conservation heatmap
+```
+Acari_miRNA_conservation_heatmap.pdf
+Acari_miRNA_conservation_heatmap.svg
+Acari_miRNA_conservation_heatmap.png
+```
+
+- Since the code is written for `Acari` it generates outputs with the prefix `Acari`.
+- The second heatmap focuses on `presence/absence`, rather than copy number.
+- The copy-number matrix is converted using: `binary_df = (heatmap_df > 0).astype(int)` Therefore: `copy number > 0 → 1 → present | copy number = 0 → 0 → absent
+
+
+### Processing Workflow
+
+- The script performs the following workflow:
+
+#### Step 1. — Reading Input Files
+
+The script automatically finds: `*.heatmap.csv` using: `files = glob.glob("*.heatmap.csv")`
+Each file is processed independently.
+
+#### Step 2. — Extracting Species
+
+The species name is taken from the first row: `species = df["species"].iloc[0]`. This species name is then used as the column name in the combined matrix.
+
+#### Step 3. — Extracting miRNA Copy Numbers 
+
+Only these columns are retained: `family` `filtered_hits`
+filtered_hits is converted into numeric copy numbers. Non-numeric values are converted to missing values and subsequently replaced by zero.
+
+#### Step 4. — Merging Species
+
+All species are merged using: `family` as the common identifier. Missing combinations are interpreted as zero.
+
+
+Conceptually:
+```
+Species A
+
+family    copies
+miR-1       2
+miR-2       1
+miR-3       5
+
+becomes:
+
+family    Species_A
+miR-1        2
+miR-2        1
+miR-3        5
+
+Another species:
+
+family    Species_B
+miR-1        1
+miR-2        0
+miR-4        3
+
+is then merged to produce:
+
+family    Species_A    Species_B
+miR-1         2            1
+miR-2         1            0
+miR-3         5            0
+miR-4         0            3
+```
+
