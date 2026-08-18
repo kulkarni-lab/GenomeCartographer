@@ -90,7 +90,7 @@ miRNA_HOX_heatmap.svg
 ```
 ### Output files description
 
- `miRNA_HOX_positions.tsv`
+ **1** `miRNA_HOX_positions.tsv`
 
 **Contains the positional relationship between every miRNA and HOX cluster.**
 
@@ -111,7 +111,7 @@ Taxon	miRNA	Scaffold	Position	Status	Distance_bp	HOX_score	HOX_context
 species1	mir-10	scaffold_1	102050	INSIDE_HOX	0	10	inside_HoxA1
 species1	mir-100	scaffold_1	95000	SAME_SCAFFOLD	5000	6.3001	upstream_of_HoxA1
 ```
-`miRNA_presence_absence.tsv`
+**2** `miRNA_presence_absence.tsv`
 **A binary presence/absence matrix with:**
 
 - rows = taxa
@@ -125,7 +125,7 @@ species1	1	1	0
 species2	1	0	1
 species3	0	1	1
 ```
-`Canonical_HOX_miRNAs.tsv`
+**3** `Canonical_HOX_miRNAs.tsv`
 
 **Contains miRNAs whose names match the canonical HOX-associated patterns:**
 
@@ -135,17 +135,17 @@ species3	0	1	1
 
 The results are sorted by taxon and HOX association score.
 
-`All_miRNA_HOX_distance_matrix.tsv`
+**4** `All_miRNA_HOX_distance_matrix.tsv`
 
 **Matrix containing the maximum HOX association score for each taxon/miRNA combination.**
 
 Rows represent taxa and columns represent miRNAs.
 
-`miRNA_HOX_heatmap.pdf`
+**5** `miRNA_HOX_heatmap.pdf`
 
 **PDF visualization of the HOX association matrix.**
 
-`miRNA_HOX_heatmap.svg`
+**6** `miRNA_HOX_heatmap.svg`
 
 **SVG version of the same heatmap, useful for editing in vector graphics software.**
 
