@@ -287,46 +287,24 @@ iqtree3 \
     -nt 29 \
     -pre HoxTree/iqtree_run/hox
 ```
-IQ-TREE Model
+### IQ-TREE Model
 
-The script currently uses:
+The script currently uses: `Q.INSECT+F+G4`
+- This is an amino-acid substitution model implemented by IQ-TREE and intended for insect protein evolution.
+- If your dataset consists primarily of mites/ticks or other Acari, you should critically evaluate whether Q.INSECT+F+G4 is the most appropriate model for your dataset.
+- The model is inherited from the script's current configuration and should not automatically be treated as optimal simply because it is used in the pipeline.
 
-Q.INSECT+F+G4
+- A useful improvement for a production analysis is to allow IQ-TREE to perform model selection, for example: `-m MFP` or an appropriate amino-acid model-selection workflow.
 
-This is an amino-acid substitution model implemented by IQ-TREE and intended for insect protein evolution.
+- This should be considered separately from the current script because changing the model changes the analysis.
 
-Important consideration for Acari
+#### Bootstrap and SH-aLRT
 
-If your dataset consists primarily of mites/ticks or other Acari, you should critically evaluate whether Q.INSECT+F+G4 is the most appropriate model for your dataset.
+- The script currently contains: `# "-bb", "1000",` `# "-alrt", "1000",`
 
-The model is inherited from the script's current configuration and should not automatically be treated as optimal simply because it is used in the pipeline.
+- These lines are commented out. Therefore, the current script does not request ultrafast bootstrap or SH-aLRT support values.
 
-A useful improvement for a production analysis is to allow IQ-TREE to perform model selection, for example:
+- If you uncomment: `-bb 1000` `-alrt 1000` IQ-TREE will calculate additional branch-support measures.
 
--m MFP
-
-or an appropriate amino-acid model-selection workflow.
-
-This should be considered separately from the current script because changing the model changes the analysis.
-
-Bootstrap and SH-aLRT
-
-The script currently contains:
-
-# "-bb", "1000",
-# "-alrt", "1000",
-
-These lines are commented out.
-
-Therefore, the current script does not request ultrafast bootstrap or SH-aLRT support values.
-
-If you uncomment:
-
--bb 1000
--alrt 1000
-
-IQ-TREE will calculate additional branch-support measures.
-
-For publication-quality phylogenetic inference, branch support is generally recommended.
 
 
