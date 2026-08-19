@@ -92,5 +92,33 @@ hox_cluster.png
 hox_cluster.pdf
 ```
 
+### Output files description
+
+**1** `hox_clusters.annotated.csv`
+
+- This CSV file contains all the coordinates actually used for plotting.
+- The CSV file contains:
+```
+genome
+chrom_file
+sequence
+hoxgene
+scaffold
+start
+end
+strand
+```
+
+**2** `hox_clusters.png`
+**3** `hox_clusters.pdf`
+
+**2** and **3** are graphical files both PNG and PDF format respectively. PNG file is 300 DPI and PDF file is vector-based, which can be used for easier editing.
+
+Example:
+
+<img width="1010" height="560" alt="hox_clusters" src="https://github.com/user-attachments/assets/d616d1a1-f99c-4f5a-a305-05ed414488b9" />
+
+
+
 
 
