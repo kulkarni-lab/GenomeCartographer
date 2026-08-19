@@ -26,7 +26,7 @@ gene_density/
 
 ## Usage
 ```
-python3 0.plot-gene-density.py
+python3 1.plot-gene-density.py
 ```
 
 The script automatically searches for `./gene_density/*.txt`
