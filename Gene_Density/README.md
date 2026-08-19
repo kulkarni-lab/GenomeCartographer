@@ -98,7 +98,8 @@ gene_density_ridgeline.pdf
 Script generates high quality, 600 dpi PNG and vector PDF file.
 
 Example:
-<img width="1600" height="1111" alt="gene density" src="https://github.com/user-attachments/assets/879cbc88-acd3-481f-96f5-8df2d692725f" />
+<img width="1071" height="313" alt="image" src="https://github.com/user-attachments/assets/e40fa8dc-fb42-4456-a5a8-1a7640405873" />
+
 
 
 ### Gene density units
